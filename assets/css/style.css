@@ -41,6 +41,11 @@ body {
     color: hsl(183, 100%, 15%);
     border-radius: 12px;
 }
+.inf-input:hover {
+    box-shadow: 0 0 0 2px hsl(172, 67%, 45%);
+    /* border: 2px solid hsl(172, 67%, 45%);
+    box-sizing: border-box; */
+}
 .input-w-icon {
     display: flex;
     position: relative;
@@ -78,7 +83,7 @@ body {
     font-weight: bold;
 }
 
-.inf-selecttip .btn-selecttip:active {
+.inf-selecttip .btn-selecttip-active {
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
     font-weight: bold;
@@ -147,7 +152,16 @@ body {
     .container-information {
         width: 90%;
     }
-
+    .inf-selecttip .title-inf {
+        grid-column: 1/4;
+    }
+    .inf-selecttip {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .inf-input {
+        width: 100%;
+    }
     .container-result {
         position: relative;
         box-sizing: border-box;
