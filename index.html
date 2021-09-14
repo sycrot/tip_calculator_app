@@ -27,28 +27,30 @@
   <div class="container-app">
     <div class="container-information">
       <div class="inf-bill mb-2">
-        <p class="title-inf">Conta</p> <!-- Bill -->
+        <p class="title-inf inf-b-title">Conta<span class="title-inf err-title-alert">Can't be zero</span></p> <!-- Bill -->
         <div class="input-w-icon">
           <label for="bill" class="i-icon"><img src="./assets/images/icon-dollar.svg" alt="icondollar"></label>
-          <input type="text" name="bill" id="bill" placeholder="142.55" class="inf-input">
+          <input type="text" name="bill" id="bill" placeholder="142.55" class="inf-input" required>
         </div>
       </div>
 
       <div class="inf-selecttip mb-2">
         <p class="title-inf">Select Tip %</p>
+        <p class="alert-inf-selecttip title-inf">Can't be zero</p>
         <button class="btn-selecttip">5%</button>
         <button class="btn-selecttip">10%</button>
         <button class="btn-selecttip">15%</button>
         <button class="btn-selecttip">25%</button>
         <button class="btn-selecttip">50%</button>
-        <button class="btn-selecttip btn-custom">Custom</button>
+        <label for="btn-ipt-selecttip"></label>
+        <input type="text" placeholder="Custom" id="btn-ipt-selecttip" class="ipt-selecttip btn-selecttip">
       </div>
 
       <div class="inf-npeople mb-2">
-        <p class="title-inf">Number of People</p>
+        <p class="title-inf inf-t-people">Number of People<span class="title-inf err-title-alert">Can't be zero</span></p>
         <div class="input-w-icon">
           <label for="n-people" class="i-icon"><img src="./assets/images/icon-person.svg" alt="iconperson"></label>
-          <input type="text" name="n-people" id="n-people" placeholder="5" class="inf-input">
+          <input type="text" name="n-people" id="n-people" placeholder="5" class="inf-input" required>
         </div>
       </div>
       
@@ -63,9 +65,7 @@
         <p>Total<span>/ person</span></p>
         <h3 class="total-per-person">$32.79</h3>
       </div>
-      <button class="result-reset">
-        Reset
-      </button>
+      <button class="result-reset">Reset</button>
     </div>
   </div>
   
